@@ -1,0 +1,50 @@
+:host {
+        display: flex;
+        justify-content: center;
+}
+.thesis-card {
+    border: 1px solid var(--light-color);
+    padding: 32px 24px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 32px;
+    align-items: center;
+}
+.thesis-card__author-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.id {
+    margin-top: 25px;
+}
+.thesis-card__button-actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.thesis-card__button-actions button {
+    width: 100px;
+    height: 50px;
+    border-width: 0px;
+}
+.thesis-card__button-delete button {
+    background-color: var(--button-delete-color);
+}
+.id-name {
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    grid-gap: 20px;
+}
+
+.thesis-card__created {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.thesis-card__updated {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

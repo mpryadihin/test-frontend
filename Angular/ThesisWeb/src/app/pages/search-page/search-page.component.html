@@ -1,0 +1,76 @@
+
+<div class="thesis-header__filter-control">
+  <div class="form-group">
+    <label for="idFilter">ID: </label>
+    <input type="text" id="idFilter" [(ngModel)]="filters.id"  (input)="onFilterChange()">
+  </div>
+  <div class="form-group">
+    <label for="authorFilter">Автор: </label>
+    <input type="text" id="authorFilter" [(ngModel)]="filters.mainAuthor" (input)="onFilterChange()">
+  </div>
+  <div class="form-group">
+    <label for="emailFilter">Почта: </label>
+    <input type="text" id="emailFilter" [(ngModel)]="filters.contactEmail"  (input)="onFilterChange()">
+  </div>
+  <div class="form-group">
+    <label for="topicFilter">Тема: </label>
+    <input type="text" id="topicFilter" [(ngModel)]="filters.topic"  (input)="onFilterChange()">
+  </div>  
+  <div class="form-group">
+    <label for="createdFilter">Дата создания: </label>
+    <input type="datetime-local" id="createdFilter" [(ngModel)]="filters.created" (input)="onFilterChange()">
+  </div>
+  <div class="form-group">
+    <label for="updatedFilter">Дата обновления: </label>
+    <input type="datetime-local" id="updatedFilter" [(ngModel)]="filters.updated"  (input)="onFilterChange()">
+  </div>
+  <div></div>
+  <div class="reset-filters">
+    <button (click)="resetFilters()" class="btn-reset">Сбросить фильтры</button>
+  </div>
+</div>
+
+  <div class="thesis-header__sort-control">
+    <div class="form-group">
+      <label for="sortField">Сортировка: </label>
+        <select id="sortField" (change)="onSortChange()">
+          <option value="id">ID</option>
+          <option value="mainAuthor">Автор</option>
+          <option value="contactEmail">Почта</option>
+          <option value="topic">Тема</option>
+          <option value="created">Дата создания</option>
+          <option value="updated">Дата обновления</option>
+      </select>
+      <select id="sortOrder" (change)="onSortChange()">
+      <option value="asc">По возрастанию</option>
+      <option value="desc">По убыванию</option>
+    </select>
+    </div>
+    <div></div>
+    <div class="thesis-header">
+  <div class="thesis-header__pages-control">
+    <label for="pageSize">Количество элементов на странице: </label>
+    <input type="number" id="pageSize" [value]="pageSize" (input)="onPageSizeChange($event)" min="1" max="{{pageable.totalItems}}">
+  </div>
+</div>
+  </div>
+
+
+
+
+
+<div class="thesis-card__wrapper">
+  @for (thesis of pageable.items; track thesis.id){
+    <thesis-card 
+    [thesis]="thesis" (thesisDeleted)="onThesisDeleted($event)"></thesis-card>
+  }
+</div>
+
+<div class="pagination">
+  <button (click)="onPreviousPage()" [disabled]="page === 1"><</button>
+  <span>Страница {{ page }} из {{ pageable.totalPages }}</span>
+  <button (click)="onNextPage()" [disabled]="page === pageable.totalPages">></button>
+</div>
+
+
+

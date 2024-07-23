@@ -1,0 +1,46 @@
+@if (thesisResource) {
+<div class="thesis-page">
+    <div class="head">
+        <h1 class="h1">Тезис №{{thesisResource.id}}</h1>
+        <button type="button" class="btn-change" (click)="editThesis(thesisResource.id)">Редактировать</button>
+    </div>
+    <div class="thesis-page__head">
+        <div class="thesis-page__main-author">
+            <strong>{{thesisResource.mainAuthor.lastName}} {{thesisResource.mainAuthor.firstName}} {{thesisResource.mainAuthor.middleName}}</strong>
+            <span>{{thesisResource.contactEmail}}</span>
+            <div class="thesis-page__workplace">
+                <strong>Рабочее место: </strong>
+                <span>{{thesisResource.mainAuthor.workplace}}</span>
+            </div>
+        </div>
+    
+        <div class="thesis-page__thesis-info-created">
+            <label>Создано</label>
+            <span>{{thesisResource.created | date:'dd.MM.yyyy hh:mm'}}</span>
+        </div>
+        <div class="thesis-page__thesis-info-updated">
+                <label>Обновлено</label>
+                <span>{{thesisResource.updated | date:'dd.MM.yyyy hh:mm'}}</span>
+        </div>
+        </div>
+        <div class="thesis-page__thesis">
+            <div class="thesis-page__thesis-topic">
+                <strong class="fs24">Название</strong>
+                <p>{{thesisResource.topic}} </p>
+            </div>
+            <div class="thesis-page__thesis-content">
+                <strong class="fs24">Тезис</strong>
+                <p>{{thesisResource.content}}</p>
+            </div>
+        </div>
+        <div class="thesis-page__other-authors">
+            <strong class="fs24">Другие авторы </strong>
+            <div *ngFor="let author of thesisResource.otherAuthors">
+                <span>{{author.lastName}} {{author.firstName}} {{author.middleName}}</span>
+            </div>
+        </div>
+</div>
+} 
+@if (!thesisResource) {
+    <h1>Не найдено</h1>
+}

@@ -1,0 +1,98 @@
+:host {
+        display: flex;
+        justify-content: center;
+}
+.thesis-page h1 {
+    text-align: center;
+}
+.thesis-page__head {
+    padding: 32px 24px;
+    border: 1px solid var(--light-color);
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+}
+.thesis-page__thesis-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.thesis-page__other-authors {
+    margin-top: 10px;
+    border: 1px solid var(--light-color);
+    padding: 32px 24px;
+    margin-bottom: 15px;
+}
+.thesis-page__other-authors span {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 5px;
+}
+.thesis-page__thesis-info-updated {
+    text-align: center;
+}
+
+.thesis-page__thesis-info-created {
+    text-align: center;
+}
+.thesis-page__thesis-info-created span {
+     display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.thesis-page__thesis-info-updated span{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.thesis-page__other-authors span{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.thesis-page__workplace {
+    margin-top: 8px;
+}
+.thesis-page__main-author {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.thesis-page__thesis {
+    margin-top: 10px;    
+}
+.fs24 {
+    font-size: 24px;
+}
+
+.thesis-page__thesis-topic {
+    border: 1px solid var(--light-color);
+    padding: 10px 20px;
+}
+.thesis-page__thesis-content {
+    padding: 10px 20px;
+    border: 1px solid var(--light-color);
+}
+.btn-change {
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    border-width: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.head { 
+   display: flex; 
+   justify-content: center;
+   justify-content: space-between;
+}
+
+
+
+.h1 {
+    flex: 1;
+    text-align: center;
+}

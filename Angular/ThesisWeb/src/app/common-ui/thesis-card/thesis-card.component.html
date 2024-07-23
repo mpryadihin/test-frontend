@@ -1,0 +1,34 @@
+@if (thesis) {
+    <div class="thesis-card">
+    <div class="id-name">
+        <strong class="id">{{thesis.id}}</strong>
+        <div class="thesis-card__author-info">
+            <strong>{{thesis.mainAuthor}}</strong>
+            <span>{{thesis.contactEmail}}</span>
+        </div>
+    </div>
+    <div class="thesis-card__topic">
+        <span>{{thesis.topic}}</span>
+    </div>
+    <div class="thesis-card__created">
+        <label>Создано</label>
+        <span>{{thesis.created | date:'dd.MM.yyyy hh:mm'}}</span>
+    </div>
+    <div class="thesis-card__updated">
+        <label>Обновлено</label>
+        <span>{{thesis.updated | date:'dd.MM.yyyy h:mm'}}</span>
+    </div>
+    <div class="thesis-card__button-actions">
+        <div class="thesis-card__button-open">
+            <button type="button" (click)="openThesis()">Открыть</button>
+        </div>
+        <div class="thesis-card__button-delete">
+            <button type="button" (click)="deleteThesis()">Удалить</button>
+        </div> 
+    </div>
+</div>
+}
+
+
+
+

@@ -1,0 +1,16 @@
+<div class="other-authors" [formGroup]="authorForm">
+    
+        <div class="form-group">
+            <label for="lastName">Фамилия</label>
+            <input formControlName="lastName" type="text" id="lastName" name="lastName">
+        </div>
+        <div class="form-group">
+            <label for="firstName">Имя</label>
+            <input formControlName="firstName" type="text" id="firstName" name="firstName">
+        </div>
+        <div class="form-group">
+            <label for="middleName">Отчество</label>
+            <input formControlName="middleName" type="text" id="middleName" name="middleName">
+        </div>
+    <button type="button" class="delete-other-author-button" (click)="remove()">Удалить</button>
+</div>

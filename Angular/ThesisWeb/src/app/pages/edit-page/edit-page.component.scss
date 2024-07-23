@@ -1,0 +1,119 @@
+    :host {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .form-group label {
+        color: var(--label-text-color);
+        display: block;
+        margin-bottom: 2px;
+        margin-left: 25px;
+        font-size: 18px;
+    }
+    .form-group input {
+        border-width: 0px;
+        border-radius: 5px;
+        height: 40px;
+        width: 200px;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    .form-group {
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+
+    .form-group-row {
+        margin-bottom: 30px;
+    }
+
+    button {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+    }
+
+    .form-group-row label {
+        color: var(--label-text-color);
+        display: block;
+        margin-bottom: 2px;
+        margin-left: 25px;
+        font-size: 18px;
+    }
+    .form-group-row input {
+        border-width: 0px;
+        border-radius: 5px;
+        height: 40px;
+        width: 96%;
+        margin-left: 15px;
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    h1 {
+        color: var(--title-text-color);
+        margin-left: 25px;  
+    }
+    .add-button {
+        background-color: var(--button-add-color);
+        width: 150px;
+        height: 50px;
+        color: var(--button-add-text-color);
+        border-radius: 10px;
+        border-width: 0px;
+        float: right;
+        margin-right: 15px;
+        margin-top: 20px;        
+    }
+    .add-other-authors h1 {
+        float: left;
+    }
+    .add-other-authors {
+        overflow: hidden;
+    }
+    .form-group-row textarea {
+        border-width: 0px;
+        border-radius: 5px;
+        margin-left: 15px;
+        width: 95%;
+        font-size: 18px;
+        padding: 8px 10px 8px 10px;
+    }
+    .submit-button {
+        background-color: var(--button-submit-color);
+        width: 150px;
+        height: 50px;
+        color: var(--button-submit-text-color);
+        font-size: 18px;
+        border-radius: 10px;
+        border-width: 0px;
+        margin-left: 15px;
+        margin-top: 10px;
+        
+    }
+    .reset-button {
+        background-color: var(--button-reset-color);
+        width: 200px;
+        height: 50px;
+        color: var(--button-reset-text-color);
+        font-size: 18px;
+        border-radius: 10px;
+        border-width: 0px;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    .cancel-button {
+        background-color: var(--button-delete-color );
+        width: 200px;
+        height: 50px;
+        color: var(--button-reset-text-color);
+        font-size: 18px;
+        border-radius: 10px;
+        border-width: 0px;
+        margin-left: 60px;
+        margin-top: 10px;
+        float: right;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+    

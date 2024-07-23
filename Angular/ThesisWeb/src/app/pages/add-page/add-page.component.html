@@ -1,0 +1,66 @@
+<form 
+class="add-form" 
+[formGroup]="form"
+(ngSubmit)="onSubmit()"
+>
+    <div class="author">
+        <h1>Автор</h1>
+            <div class="form-group" formGroupName="mainAuthor">
+            <label for="lastName">Фамилия</label>
+            <input 
+            formControlName="lastName"
+            type="text" id="lastName" name="lastName">
+            </div>
+            <div class="form-group" formGroupName="mainAuthor">
+                <label for="firstName">Имя</label>
+                <input 
+                formControlName="firstName"
+                type="text" id="firstName" name="firstName">
+            </div>
+            <div class="form-group" formGroupName="mainAuthor">
+                <label for="middleName">Отчество</label>
+                <input 
+                formControlName="middleName"
+                type="text" id="middleName" name="middleName">
+            </div>
+        <div class="form-group">
+            <label for="email">Контактный email</label>
+            <input 
+            formControlName="contactEmail"
+            type="email" id="email" name="email">
+        </div>
+            <div class="form-group-row" formGroupName="mainAuthor">
+                <label for="workplace">Место работы</label>
+                <input 
+                formControlName="workplace"
+                type="text" id="workplace" name="workplace">
+            </div>
+    </div>
+    <div class="other-authors">
+        
+        <div class="add-other-authors">
+            <h1>Другие авторы</h1>
+            <button type="button" class="add-button" (click)="addAuthor()">Добавить</button>
+        </div>
+            <ng-container #container></ng-container>
+    </div>
+    <div class="thesis">
+        <h1>Тезис</h1>
+        <div class="form-group-row">
+            <label for="topic">Тема</label>
+            <input 
+            formControlName="topic"
+            type="text" id="topic" name="topic">
+        </div>
+        <div class="form-group-row">
+            <label for="content">Содержание</label>
+            <textarea 
+            formControlName="content"
+            id="content" name="content" rows="8"></textarea>
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="submit-button">Отправить</button>
+            <button type="reset" class="reset-button">Очистить форму</button>
+        </div>
+    </div>
+</form> 

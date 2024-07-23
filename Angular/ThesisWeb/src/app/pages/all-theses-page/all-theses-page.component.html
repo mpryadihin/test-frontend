@@ -1,0 +1,6 @@
+<div class="thesis-card__wrapper">
+  @for (thesis of theses; track thesis.id){
+    <thesis-card 
+    [thesis]="thesis" (thesisDeleted)="onThesisDeleted($event)"></thesis-card>
+  }
+</div>

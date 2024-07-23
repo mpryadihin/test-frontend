@@ -1,0 +1,38 @@
+:root {
+  --bg-color: #15152e;
+  --label-text-color : rgb(219, 209, 209);
+  --title-text-color : rgb(255, 255, 255);
+  --light-color : rgb(255, 255, 255);
+  --button-delete-color : #fd8c8c;
+  --label-text-color : rgb(219, 209, 209);
+  --title-text-color : rgb(255, 255, 255);
+  --button-add-color : rgb(52, 6, 255);
+  --button-submit-color : rgb(52, 6, 255);
+  --button-add-text-color : #ffffff;
+  --button-submit-text-color : #ffffff;
+  --button-reset-color : rgb(255, 255, 255);
+  --button-reset-text-color : #000000;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  background: var(--bg-color);
+  color: var(--light-color);
+  font-size: 18px;
+  
+}
+
+button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+h1 {
+    color: var(--title-text-color);
+}
+label {
+    color: var(--label-text-color);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

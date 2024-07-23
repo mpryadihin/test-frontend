@@ -1,0 +1,92 @@
+:host {
+    display: block;
+    justify-content: center;
+}
+.thesis-card__wrapper {
+    display: grid;
+    grid-gap: 8px;
+}
+.thesis-header__pages-control {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.thesis-header__pages-control input {
+    border-width: 0px;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    margin-right: 15px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.pagination {
+    margin-top: 15px;
+    text-align: center;
+}
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-reset {
+    border-width: 0px;
+    height: 45px;
+    margin-left: 15px;
+    margin-top: 20px;
+    width: 210px;
+    background-color: #007bff;
+  color: white;
+}
+.btn-control {
+    text-align: center;
+    margin-top: 20px;
+}
+.thesis-header__filter-control {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-gap: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.thesis-header__sort-control {
+    grid-template-columns: 600px 600px;
+    display: grid;
+    grid-gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+ .form-group label {
+        color: var(--label-text-color);
+        display: block;
+        margin-bottom: 2px;
+        margin-left: 25px;
+        font-size: 18px;
+    }
+.form-group input {
+        border-width: 0px;
+        border-radius: 5px;
+        height: 40px;
+        width: 200px;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 18px;
+        padding-left: 10px;
+}
+.form-group select {
+        border-width: 0px;
+        border-radius: 5px;
+        height: 40px;
+        width: 200px;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 18px;
+        padding-left: 10px;
+}
